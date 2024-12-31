@@ -16,7 +16,7 @@ The screen is a [Seeed Studio Round Display for XIAO](https://wiki.seeedstudio.c
 The ring is a NeoPixel WS2812 24-LED ring. I used [this one from AliExpress](https://www.aliexpress.com/item/1005005808924364.htm), but any WS2812 should work.  
 As the touch screen uses the SPI and I2C interfaces, I had to use a GPIO to drive the LEDs. I'm using D0 on the XIAO board for this.  
 This pin is normally used to read the status of the battery connected to the display, so this information is unavailable with this setup.  
-![Data from LED ring connected to D0 on XIAO board, no connection to Round Display](LedRingConnection.jpg)  
+![Data from LED ring connected to D0 on XIAO board, no connection to Round Display](LEDRingConnection.jpg)  
   
 A single LED can draw up to 60 mA at full intensity, making the theoretical maximum current draw for the ring 1440 mA.  
 This is too much to draw from the XIAO board's 5V pin, so I power the LED ring directly from a LiPo battery with appropriate discharge capacity.  
